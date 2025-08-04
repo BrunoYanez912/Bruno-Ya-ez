@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    input[type="submit"],input[type="reset"]{
+    border: 1px solid #666666;
+    background-color: #004C99;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: filter .2s;}
+
+    input[type="text"],input[type="radio"],input[type="number"],textarea {
+    border: 1px solid #C5C5C5;
+    color: #666666;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    box-sizing: border-box;
+    outline: none;}
+
+    input[type="text"]:focus,input[type="radio"]:focus,input[type="number"]:focus,textarea:focus {
+    border-color: #004C99;}
+    </style>
+</head>
+<body>
+    <h1><p>Inmobiliaria Tato Dobien</p></h1>
+    <form action="#">
+        <div style="margin-top: 50px;">
+            <label for="nom">Nombre</label>
+            <input type="text" id="nom" placeholder="ingrese nombre"  maxlength="25">
+        </div>
+        <div style="margin-top: 10px;">
+            <label for="ap">Apellido</label>
+            <input type="text" id="ap" placeholder="ingrese apellido"  maxlength="25">
+        </div>
+        <div style="margin-top: 10px;">
+            <label for="dir">Direccion</label>
+        </div>
+        <div>
+            <textarea id="dir" placeholder="ingrese direccion" maxlength="30"></textarea>
+        </div>
+        <div style="margin-top: 10px;">
+            <label for="telefono">telefono</label>
+            <input type="number" id="telefono" value="0299" maxlength="15">
+        </div>
+        <div>
+            <label for="da">que desea hacer?</label>
+        </div>
+        <div>
+            <label for="si">compra</label>
+            <input type="radio"  name="da" checked>
+            
+        </div>
+        <div>
+            <label for="no">alquiler</label>
+            <input type="radio"  name="da">
+        </div>
+        <div>
+            <p>Zona de Interés:</p>
+            <input type="checkbox" id="zona_centro" name="zona[]" value="centro" checked>
+            <label for="zona_centro">Zona Centro</label>
+            <input type="checkbox" id="zona_norte" name="zona[]" value="norte">
+            <label for="zona_norte">Zona Norte</label>
+            <input type="checkbox" id="zona_sur" name="zona[]" value="sur" checked>
+            <label for="zona_sur">Zona Sur</label>
+        </div>
+        <div style="margin-top: 10px;">
+             <label for="com">comentario del problema</label>
+        </div>
+        <div>
+            <textarea name="com" id="com" placeholder="ingrese comentario"></textarea>
+        </div>
+        <div>
+            <input type="reset" value="Resetear">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
