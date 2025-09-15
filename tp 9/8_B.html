@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .subrayado {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        function mostrarOcultar(idProv, idCiud) {
+            var provincia = document.getElementById(idProv).querySelector('.nombre-prov');
+            var ciudades = document.getElementById(idCiud);
+            if (ciudades.style.display === "none") {
+                ciudades.style.display = "";
+                provincia.classList.remove("subrayado");
+            } else {
+                ciudades.style.display = "none";
+                provincia.classList.add("subrayado");
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul>
+        <li id="nqn">
+            <span class="nombre-prov">Neuquén</span>
+            <button onclick="mostrarOcultar('nqn','ciudadesNqn')">.</button>
+            <ul id="ciudadesNqn">
+                <li>Neuquén</li>
+                <li>Zapala</li>
+                <li>San Martin</li>
+                <li>Junin</li>
+            </ul>
+        </li>
+        <li id="rn">
+            <span class="nombre-prov">Rio Negro</span>
+            <button onclick="mostrarOcultar('rn','ciudadesRN')">.</button>
+            <ul id="ciudadesRN">
+                <li>Cipolletti</li>
+                <li>Fernandez Oro</li>
+                <li>Roca</li>
+                <li>Cinco Saltos</li>
+                <li>Allen</li>
+            </ul>
+        </li>
+        <li id="bsas">
+            <span class="nombre-prov">Buenos Aires</span>
+            <button onclick="mostrarOcultar('bsas','ciudadesBsAs')">.</button>
+            <ul id="ciudadesBsAs">
+                <li>La Plata</li>
+                <li>Mar del Plata</li>
+                <li>Necochea</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

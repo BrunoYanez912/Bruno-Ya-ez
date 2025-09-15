@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+ function pes_dol(){
+    var pesos= prompt("Ingrese la cantidad de pesos a convertir a dolares");
+    var conversion= pesos/1400;
+    alert("La conversion de pesos a dolares es: "+conversion);
+}
+ function dol_pes(){
+    var dolares= prompt("Ingrese la cantidad de dolares a convertir a pesos");
+    var conversion= dolares*1365;
+    alert("La conversion de dolares a pesos es: "+conversion);
+}
+ function pes_rea(){
+    var pesos= prompt("Ingrese la cantidad de pesos a convertir a reales");
+    var conversion= pesos*0.0043;
+    alert("La conversion de pesos a reales es: "+conversion);
+}
+ function rea_pes(){
+    var reales= prompt("Ingrese la cantidad de reales a convertir a pesos");
+    var conversion= reales/0.0043;
+    alert("La conversion de reales a pesos es: "+conversion);
+}
+ function pes_eu(){
+    var pesos= prompt("Ingrese la cantidad de pesos a convertir a euros");
+    var conversion= pesos*0.00063;
+    alert("La conversion de pesos a euros es: "+conversion);
+}
+ function eu_pes(){
+    var euros= prompt("Ingrese la cantidad de euros a convertir a pesos");
+    var conversion= euros/0.00063;
+    alert("La conversion de euros a pesos es: "+conversion);
+}
+    </script>
+</head>
+<body>
+     <script>
+            var Opcion = prompt("Ingrese las siguientes opciones: \n 1. Convertir de pesos a dolares \n 2. Convertir de dolares a pesos \n 3. Convertir de pesos a reales \n 4. Convertir de reales a pesos \n 5. Convertir de pesos a euros \n 6. Convertir de euros a pesos");
+            if (Opcion == 1) {
+                pes_dol();
+            } 
+            else if (Opcion == 2) {
+                dol_pes();
+
+            } 
+            else if ( Opcion== 3) {
+                pes_rea();
+                
+            } 
+            else if ( Opcion== 4) {
+                rea_pes();
+                
+            } 
+            else if ( Opcion== 5) {
+                pes_eu();                
+            } 
+            else if (Opcion == 6) {
+                eu_pes();
+            } 
+            else {
+                document.write("Opcion no valida");
+            }
+
+        </script>
+</body>
+</html>

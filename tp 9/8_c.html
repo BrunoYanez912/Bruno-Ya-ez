@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function detectar() {
+            var nombre = navigator.appName;
+            if (nombre === 'Microsoft Internet Explorer') {
+                document.body.innerHTML = nombre;
+                location.href = 'http://www.microsoft.com/ie';
+            } else if (nombre === 'Firefox') {
+                document.body.innerHTML = nombre;
+                location.href = 'http://www.mozilla.com/firefox/';
+            } else if (nombre === 'Konkeror') {
+                document.body.innerHTML = nombre;
+                location.href = 'http://konqueror.org';
+            } else {
+                document.body.innerHTML = nombre + '<br>Browser desconocido.';
+            }
+        }
+    </script>
+</head>
+<body onload="detectar()">
+</body>
+</html>
